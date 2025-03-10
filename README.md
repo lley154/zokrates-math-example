@@ -15,8 +15,8 @@ def main(private field a, private field b) -> (field, field) {
 }
 ```
 
-- The keyword field is the basic type we use
-- The keyword private signals that we do not want to reveal this input, but still prove that we know its value
+- The keyword ```field``` is the basic type we use
+- The keyword ```private``` signals that we do not want to reveal this input, but still prove that we know its value
 
 Then execute the following commands inside the docker container.
 ### Compile
@@ -30,9 +30,9 @@ total 16
 -rw-rw-r-- 1 zokrates zokrates  75 Mar 10 04:26 math.zok
 
 ```
-- The abi.json file describes the structure of the outputs from your zero-knowledge proof circuit
-- The out file is the compiled binary representation of your circuit and contains the arithmetic circuit in a format that ZoKrates can execute
-- The out.r1cs file (Rank-1 Constraint System) is a mathematical representation of your program's constraints. It is used to convert your program into a form that can be proven using zk-SNARKs.
+- The ```abi.json``` file describes the structure of the outputs from your zero-knowledge proof circuit
+- The ```out``` file is the compiled binary representation of your circuit and contains the arithmetic circuit in a format that ZoKrates can execute
+- The ```out.r1cs``` file (Rank-1 Constraint System) is a mathematical representation of your program's constraints. It is used to convert your program into a form that can be proven using zk-SNARKs.
 
 ### zkSNARK Setup
 ```
@@ -46,8 +46,8 @@ total 24
 -rw-rw-r-- 1 zokrates zokrates   75 Mar 10 04:26 math.zok
 -rw-r--r-- 1 zokrates zokrates 1589 Mar 10 04:41 verification.key
 ```
-- The proviing.key is has the trusted setup parameters and used by the prover to generate proofs
-- The verification.key contains public parameters needed to verify proofs and used by verifiers
+- The ```proving.key``` is has the trusted setup parameters and used by the prover to generate proofs
+- The ```verification.key``` contains public parameters needed to verify proofs and used by verifiers
 
 ### Execute the program
 ```
@@ -68,9 +68,8 @@ total 32
 -rw-r--r-- 1 zokrates zokrates 1589 Mar 10 04:41 verification.key
 -rw-r--r-- 1 zokrates zokrates  128 Mar 10 04:46 witness
 ```
-- The out.wtns is a binary file that contains all circuit variables (private and public), intermediate values computed during circuit execution and the actual values that satisfy the R1CS constraints
-- the witness file is the public outputs of the computation
-
+- The ```out.wtns``` is a binary file that contains all circuit variables (private and public), intermediate values computed during circuit execution and the actual values that satisfy the R1CS constraints
+- the ```witness``` file is the public outputs of the computation
 
 
 ### Generate a proof of computation
