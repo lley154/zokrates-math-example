@@ -8,7 +8,7 @@ $ cd /workspaces
 $ mkdir math
 $ cd math
 ```
-In an new terminal window, in the ~/zokrates/math directory create a file with the following content and save it a math.zok. We will prove knowledge of that we know 2 numbers with the both the product and the sum match the known outputs.
+In an new terminal window, in the ~/zokrates/math directory create a file with the following content and save it a math.zok. We will prove that we know 2 numbers with the both the product and the sum match the known outputs.
 ```
 def main(private field a, private field b) -> (field, field) {
     field c = a * b;
