@@ -1,12 +1,14 @@
 # Zokrates Math Example
 Open a terminal window
 ```
-$ mkdir -p ~/zokrates
+$ mkdir ~/zokrates
+$ cd ~/zokrates
 $ docker run -v /path-to-zokrates-directory/:/workspace -it zokrates/zokrates /bin/bash
 $ cd /workspaces
-$ cd root
+$ mkdir math
+$ cd math
 ```
-In an new terminal window, in the ~/zokrates/root directory create a file with the following content and save it a math.zok. We will prove knowledge of the square root a of a number b.
+In an new terminal window, in the ~/zokrates/math directory create a file with the following content and save it a math.zok. We will prove knowledge of that we know 2 numbers with the both the product and the sum match the known outputs.
 ```
 def main(private field a, private field b) -> (field, field) {
     field c = a * b;
