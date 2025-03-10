@@ -1,4 +1,4 @@
-# zkSNARKS Math Example
+# Zokrates Math Example
 Open a terminal window
 ```
 $ mkdir -p ~/zokrates
