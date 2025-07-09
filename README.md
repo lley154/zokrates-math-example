@@ -4,7 +4,7 @@ Open a terminal window
 $ mkdir ~/zokrates
 $ cd ~/zokrates
 $ docker run -v /path-to-zokrates-directory/:/workspace -it zokrates/zokrates /bin/bash
-$ cd /workspaces
+$ cd /workspace
 $ mkdir math
 $ cd math
 ```
